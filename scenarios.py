@@ -107,4 +107,4 @@ def optimization(P, progset, start_year, facility_code, budgets:list):
     ut.plot_allocation(results_optimized[1:],file_name='optimization_Budget_Allocation_{}'.format(facility_code)) # allocation
     
     # Save budget allocation and interventions coverage (exclude status-quo result)
-    ut.write_alloc_excel(progset, results_optimized[1:], start_year,file_name='results/optimization_Budget_Allocation_{}.xlsx'.format(facility_code))
+    ut.write_alloc_excel(progset, results_optimized[1:], start_year,file_name='results/optimization_Budget_Allocation_{}'.format(facility_code))

@@ -1,0 +1,4 @@
+atomica
+pandas
+numpy
+matplotlib

@@ -135,9 +135,11 @@ def write_alloc_excel(progset, results, year, print_results=True,file_name=None)
     df2.index = prog_labels
     
     if print_results:
+        file_name = file_name+'.xlsx'
         writer = pd.ExcelWriter(file_name, engine='xlsxwriter')
         df1.to_excel(writer, sheet_name="Budgets")
         df2.to_excel(writer, sheet_name="Coverages")
+        writer.close()
         print('Excel file saved: {}'.format(file_name))
     
     return df1, df2
